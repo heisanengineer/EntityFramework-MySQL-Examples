@@ -4,12 +4,12 @@ public class Program
         {
             using (var db = new NorthwindContext())
             { 
-
                 var customers = db.Customers.ToList();
 
                 foreach (var customer in customers)
                 {
                     Console.WriteLine(customer.FirstName + " " + customer.LastName);
                 }
+            }
         }
-        }}
+    }
